@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Inicio | COLNASE</title>
+</head>
+
+<body>
+
+
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="index.html">COLNASE</a>
+        </div>
+
+        <!-- Botón hamburguesa visible solo en   móvil -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <link rel="icon" href="proyecto-ico.ico" type="image/x-icon">
+
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">INICIO</a></li>
+                <!-- VIDEOS -->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" id="consejos-link">CONSEJOS</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-column">
+                            <ul>
+                                <li><a href="account-hijacking-1.html">Account Hijacking</a></li>
+                                <li><a href="phishing-2.html">Phishing</a></li>
+                                <li><a href="mitm-3.html">Man-in-the-Middle</a></li>
+                                <li><a href="apps-piratas-4.html">Apps Piratas</a></li>
+                                <li><a href="Engagement-Farming-5.html">Engagement Farming</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-separator"></div>
+                        <div class="dropdown-column">
+                            <ul>
+                                <li><a href="scam-correo-6.html">Scam (Vía Correo)</a></li>
+                                <li><a href="ransomware-usb-7.html">Ransoware (Via USB)</a></li>
+                                <li><a href="tech-support-scam-8.html">Scam (Soporte Técnico)</a></li>
+                                <li><a href="tema9.html">Tema 9</a></li>
+                                <li><a href="tema10.html">Tema 10</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="nosotros.html">NUESTRO EQUIPO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!-- SECCIÓN HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Seguridad en cada paso, protección en cada sitio</h1>
+            <p class="hero-intro">Encuentra contenido multimedia, tips y consejos para navegar seguro por internet.
+                Recuerda apoyar nuestra campaña y recomendar a familiares y amigos.</p>
+            <div class="hero-buttons">
+                <a href="#carouselsection" id="btn-explorar" class="btn">Explorar Recursos</a>
+                <a href="#tips" id="btn-info" class="btn btn-secundario">Más Información</a>
+            </div>
+        </div>
+
+        <!-- Imagen -->
+        <div class="hero-image">
+            <img src="resources/freepik__background__29181.png" alt="Seguridad Digital">
+        </div>
+    </section>
+
+    <!-- SECCIÓN NÚMERO 2 -->
+    <section class="secure-info-section">
+        <div class="secure-image">
+            <img src="resources/freepik__background__21317.png" alt="Protección en línea">
+        </div>
+        <div class="secure-content">
+            <h2>¿Por qué protegernos en Internet es necesario?</h2>
+
+            <p>Proteger tu información en línea es clave. Usa contraseñas seguras, activa la autenticación en dos pasos
+                y evita compartir datos personales en sitios desconocidos. No abras enlaces sospechosos y mantén tus
+                dispositivos siempre actualizados.</p>
+
+            <a href="#tips" class="secure-btn">Más Consejos <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NÚMERO 3 -->
+    <section class="carousel-section" id="carouselsection">
+        <h2 class="carousel-title">Explora Nuestra Seguridad Digital</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="resources/1.png" alt="Imagen 1"></div>
+                <div class="carousel-item"><img src="resources/2.png" alt="Imagen 2"></div>
+                <div class="carousel-item"><img src="resources/3.png" alt="Imagen 3"></div>
+                <div class="carousel-item"><img src="resources/4.png" alt="Imagen 4"></div>
+                <div class="carousel-item"><img src="resources/6.png" alt="Imagen 6"></div>
+                <div class="carousel-item"><img src="resources/7.png" alt="Imagen 7"></div>
+            </div>
+
+            <div class="carousel-indicators">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION NUMERO 4 -->
+    <div class="section-title" id="tips">Consejos para mejorar tus hábitos</div>
+
+    <div class="cards-container">
+        <div class="card">
+            <h3>Verificar los enlaces antes de hacer clic</h3>
+            <p>Antes de abrir un enlace, asegurate de que proviene de una fuente confiable. Pasa el cursor para ver la
+                URL completa y evitar direcciones extrañas o acortadas.</p>
+            <div class="card-buttons">
+                <a href="phishing-2.html" class="card-link">Ver más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Evitar compartir datos innecesarios</h3>
+            <p>Si una página te pide información personal que no es necesaria para el servicio, piensalo dos veces.
+                Comparte solo lo esencial.</p>
+            <div class="card-buttons">
+                <a href="scam-correo-6.html" class="card-link">Ver más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Cerrar sesión en sitios importantes</h3>
+            <p>Al terminar de usar plataformas como bancos o correos electrónicos, cerrar la sesión, especialmente si
+                usás un dispositivo compartido.</p>
+            <div class="card-buttons">
+                <a href="account-hijacking-1.html" class="card-link">Ver más</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+
+            <!-- Logo y descripción -->
+            <div class="footer-logo">
+                <a href="#"><img src="resources/LOGO_PROYECTO-removebg-preview.png" alt="Colgesan"></a>
+                <p>Navega con seguridad y sé parte del cambio digital.</p>
+            </div>
+
+
+            <!-- Consejos / Temas -->
+            <div class="footer-videos">
+                <h3>Enlaces a Videos</h3>
+                <div class="footer-videos-columns">
+                    <ul>
+                        <li><a href="account-hijacking-1.html">Account Hijacking</a></li>
+                        <li><a href="phishing-2.html">Phishing</a></li>
+                        <li><a href="mitm-3.html">Man-in-the-Middle</a></li>
+                        <li><a href="apps-piratas-4.html">Apps Piratas</a></li>
+                        <li><a href="Engagement-Farming-5.html">Engagement Farming</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="scam-correo-6.html">Scam (Vía Correo)</a></li>
+                        <li><a href="ransomware-usb-7.html">Ransoware (Via USB)</a></li>
+                        <li><a href="tech-support-scam-8.html">Scam (Soporte Técnico)</a></li>
+                        <li><a href="tema9.html">Tema 9</a></li>
+                        <li><a href="tema10.html">Tema 10</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Información de contacto
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=colgesannavegaconseguridad@gmail.com"
+                            target="_blank">Envíanos un mensaje</a>
+                    </li>
+                    <li><i class="fa-solid fa-school"></i> IE Colegio Gral. Santander</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Villa del Rosario, N. de S.</li>
+                </ul>
+            </div> -->
+
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/colnase"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/colnase/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@ColgesanSeguridadDigital"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Derechos de autor -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Colgesan. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
