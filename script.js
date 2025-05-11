@@ -35,31 +35,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector("header");
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
-    const navItems = document.querySelectorAll(".nav-links li a");
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+    const navItems = document.querySelectorAll("#nav-links li a");
 
-    // Efecto de scroll para cambiar el color de la navbar
+    // Cambiar color del header al hacer scroll
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 50) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
+        header.classList.toggle("scrolled", window.scrollY > 50);
     });
 
-    // Toggle menú hamburguesa
+    // Mostrar/ocultar menú hamburguesa
     menuToggle.addEventListener("click", function () {
-        navLinks.classList.toggle("open");
+        navLinks.classList.toggle("show");
     });
 
-    // Cerrar el menú cuando se selecciona una opción en móviles
-    navItems.forEach((item) => {
+    // Cerrar menú al hacer clic en un enlace
+    navItems.forEach(item => {
         item.addEventListener("click", function () {
-            navLinks.classList.remove("open");
+            navLinks.classList.remove("show");
         });
     });
 });
+
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -121,10 +119,24 @@ document.getElementById("entrevistas-link").addEventListener("click", function (
 });
 
 
-const toggle = document.getElementById('menu-toggle');
-const nav = document.getElementById('nav-links');
 
-toggle.addEventListener('click', () => {
-    nav.classList.toggle('show');
+
+// Movimiento del robot al pasar el mouse
+document.querySelector('.hero').addEventListener('mousemove', function (e) {
+    const robot = document.querySelector('.robot');
+    const robotHead = document.querySelector('.robot-head');
+    const eyes = document.querySelectorAll('.eye');
+
+    // Mover robot
+    const moveX = (e.clientX / window.innerWidth) - 0.5;
+    const moveY = (e.clientY / window.innerHeight) - 0.5;
+
+    robot.style.transform = `rotate(${moveX * 20}deg)`;
+    robotHead.style.transform = `rotate(${moveY * 10}deg)`;
+
+    // Mover los ojos del robot
+    eyes.forEach(eye => {
+        eye.style.transform = `translate(${moveX * 10}px, ${moveY * 10}px)`;
+    });
 });
 

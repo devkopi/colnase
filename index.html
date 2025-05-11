@@ -7,11 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    
+
     <title>Inicio | COLNASE</title>
 </head>
 
 <body>
+
+    <div class="beta-warning">
+        🚧 Versión beta: esta web aún no es totalmente compatible con dispositivos móviles.
+    </div>
 
 
     <header>
@@ -60,24 +64,38 @@
         </nav>
     </header>
 
-    
-    <!-- SECCIÓN HERO -->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Seguridad en cada paso, protección en cada sitio</h1>
-            <p class="hero-intro">Encuentra contenido multimedia, tips y consejos para navegar seguro por internet.
-                Recuerda apoyar nuestra campaña y recomendar a familiares y amigos.</p>
-            <div class="hero-buttons">
-                <a href="#carouselsection" id="btn-explorar" class="btn">Explorar Recursos</a>
-                <a href="#tips" id="btn-info" class="btn btn-secundario">Más Información</a>
+            <h1 class="hero-title" id="texto-animado">COLNASE</h1>
+            <p class="hero-intro">
+                Colgesan navegando con seguridad donde encontrarás consejos prácticos, recomendaciones claras y videos
+                informativos diseñados para
+                protegerte a ti y a tu familia en línea. Queremos ser tus aliados en esta aventura digital, así que
+                explora nuestros contenidos, síguenos en nuestras redes y juntos construyamos una experiencia en
+                internet más segura y confiable para todos.
+            </p>
+            <div class="social-bar">
+                <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/colnase" aria-label="X (Twitter)" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/colnase/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@ColgesanSeguridadDigital"" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
 
-        <!-- Imagen -->
-        <div class="hero-image">
-            <img src="resources/freepik__background__29181.png" alt="Seguridad Digital">
+        <div class="hero-image-wrapper">
+            <div class="robot-glow"></div>
+            <img src="resources/robot-hero.png" alt="Robot de bienvenida" class="hero-image" />
         </div>
     </section>
+
+
+
+
+
+
+
+
+
 
     <!-- SECCIÓN NÚMERO 2 -->
     <section class="secure-info-section">
@@ -91,13 +109,13 @@
                 y evita compartir datos personales en sitios desconocidos. No abras enlaces sospechosos y mantén tus
                 dispositivos siempre actualizados.</p>
 
-            <a href="#tips" class="secure-btn">Más Consejos <i class="fas fa-arrow-right"></i></a>
+            <a href="#tips" class="secure-btn">Más consejos <i class="fas fa-arrow-right"></i></a>
         </div>
     </section>
 
     <!-- SECCIÓN NÚMERO 3 -->
     <section class="carousel-section" id="carouselsection">
-        <h2 class="carousel-title">Explora Nuestra Seguridad Digital</h2>
+        <h2 class="carousel-title">Explora nuestra seguridad digital</h2>
         <div class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active"><img src="resources/1.png" alt="Imagen 1"></div>
@@ -137,7 +155,7 @@
             <p>Si una página te pide información personal que no es necesaria para el servicio, piensalo dos veces.
                 Comparte solo lo esencial.</p>
             <div class="card-buttons">
-                <a href="scam-correo-6.html" class="card-link">Ver más</a>
+                <a href="scam-correo-6.html" class="card-link" target="_blank">Ver más</a>
             </div>
         </div>
 
@@ -146,7 +164,7 @@
             <p>Al terminar de usar plataformas como bancos o correos electrónicos, cerrar la sesión, especialmente si
                 usás un dispositivo compartido.</p>
             <div class="card-buttons">
-                <a href="account-hijacking-1.html" class="card-link">Ver más</a>
+                <a href="account-hijacking-1.html" class="card-link" target="_blank">Ver más</a>
             </div>
         </div>
     </div>
@@ -196,15 +214,15 @@
                 </ul>
             </div> -->
 
-            <div class="footer-social">
+            <!-- <div class="footer-social">
                 <h3>Síguenos</h3>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="https://x.com/colnase"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/colnase/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@ColgesanSeguridadDigital"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/colnase" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/colnase/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@ColgesanSeguridadDigital" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- Derechos de autor -->
         <div class="footer-bottom">
