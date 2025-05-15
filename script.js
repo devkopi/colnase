@@ -23,46 +23,25 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.remove("no-scroll");
       menuToggle.classList.remove("active");
     });
-  });
 
-  // Dropdown de CONSEJOS
-  const consejosLink = document.getElementById("consejos-link");
-  const consejosDropdown = consejosLink?.parentElement;
+    const consejosLink = document.getElementById("consejos-link");
+    const consejosDropdown = consejosLink.parentElement;
 
-  if (consejosLink && consejosDropdown) {
-    consejosLink.addEventListener("click", function (e) {
-      e.preventDefault();
-      consejosDropdown.classList.toggle("show");
-    });
-
-    // Cerrar si se hace clic fuera
-    window.addEventListener("click", function (e) {
-      if (!consejosDropdown.contains(e.target) && e.target !== consejosLink) {
-        consejosDropdown.classList.remove("show");
-      }
-    });
-  }
-
-  // Dropdown de ENTREVISTAS
-  const entrevistasLink = document.getElementById("entrevistas-link");
-  const entrevistasDropdown = entrevistasLink?.parentElement;
-
-  if (entrevistasLink && entrevistasDropdown) {
-    entrevistasLink.addEventListener("click", function (e) {
-      e.preventDefault();
-      entrevistasDropdown.classList.toggle("show");
+    if (consejosLink && consejosDropdown) {
+      consejosLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        consejosDropdown.classList.toggle("show");
+      });
 
       // Cerrar si se hace clic fuera
-      window.addEventListener("click", function (ev) {
-        if (
-          !entrevistasDropdown.contains(ev.target) &&
-          ev.target !== entrevistasLink
-        ) {
-          entrevistasDropdown.classList.remove("show");
+      window.addEventListener("click", function (e) {
+        if (!consejosDropdown.contains(e.target) && e.target !== consejosLink) {
+          consejosDropdown.classList.remove("show");
         }
       });
-    });
-  }
+    }
+  });
+
 
   // Carrusel
   const slides = document.querySelectorAll(".carousel-item");
