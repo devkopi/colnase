@@ -1,167 +1,199 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Ransomware (Vía USB) | COLNASE</title>
-</head>
+  </head>
 
-<body>
-
-
+  <body>
     <header>
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="index.html">COLNASE</a>
+      </div>
 
-        <!-- LOGO -->
-        <div class="logo">
-            <a href="index.html">COLNASE</a>
-        </div>
+      <!-- Botón hamburguesa visible solo en   móvil -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
 
-        <!-- Botón hamburguesa visible solo en   móvil -->
-        <div class="menu-toggle" id="menu-toggle">☰</div>
-
-
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">INICIO</a></li>
-                <!-- VIDEOS -->
-                <li class="dropdown">
-                    <a href="javascript:void(0)" id="consejos-link">CONSEJOS</a>
-                    <div class="dropdown-menu">
-                        <div class="dropdown-column">
-                            <ul>
-                                <li><a href="account-hijacking-1.html">Account Hijacking</a></li>
-                                <li><a href="phishing-2.html">Phishing</a></li>
-                                <li><a href="mitm-3.html">Man-in-the-Middle</a></li>
-                                <li><a href="apps-piratas-4.html">Apps Piratas</a></li>
-                                <li><a href="Engagement-Farming-5.html">Engagement Farming</a></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown-separator"></div>
-                        <div class="dropdown-column">
-                            <ul>
-                                <li><a href="scam-correo-6.html">Scam (Vía Correo)</a></li>
-                                <li><a href="ransomware-usb-7.html">Ransoware (Via USB)</a></li>
-                                <li><a href="tech-support-scam-8.html">Scam (Soporte Técnico)</a></li>
-                                <li><a href="tema9.html">Tema 9</a></li>
-                                <li><a href="tema10.html">Tema 10</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="nosotros.html">NUESTRO EQUIPO</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">INICIO</a></li>
+          <!-- VIDEOS -->
+          <li class="dropdown">
+            <a href="javascript:void(0)" id="consejos-link">CONSEJOS</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <ul>
+                  <li>
+                    <a href="account-hijacking-1.html">Account Hijacking</a>
+                  </li>
+                  <li><a href="phishing-2.html">Phishing</a></li>
+                  <li><a href="mitm-3.html">Man-in-the-Middle</a></li>
+                  <li><a href="apps-piratas-4.html">Apps Piratas</a></li>
+                  <li>
+                    <a href="Engagement-Farming-5.html">Engagement Farming</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown-separator"></div>
+              <div class="dropdown-column">
+                <ul>
+                  <li><a href="scam-correo-6.html">Scam (Vía Correo)</a></li>
+                  <li>
+                    <a href="ransomware-usb-7.html">Ransoware (Via USB)</a>
+                  </li>
+                  <li>
+                    <a href="tech-support-scam-8.html"
+                      >Scam (Soporte Técnico)</a
+                    >
+                  </li>
+                  <li><a href="tema9.html">Tema 9</a></li>
+                  <li><a href="tema10.html">Tema 10</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="nosotros.html">NUESTRO EQUIPO</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- SECCIÓN HERO -->
     <section class="video-section">
-        <div class="video-section-content">
-            <h1 class="video-section-title">¿Qué es el scam de soporte técnico?</h1>
+      <div class="video-section-content">
+        <h1 class="video-section-title">¿Qué es el scam de soporte técnico?</h1>
 
-            <div class="video-content">
-                <div class="video-description">
-                    <p>
-                        Un día estás navegando y te aparece un pop-up que dice: "Su equipo está infectado. Llame al
-                        01-800...". Entras en pánico y llamas. Al otro lado del teléfono, una voz amable dice ser de
-                        Microsoft, pero en realidad es un estafador que busca instalar malware o cobrarte por servicios
-                        falsos.
+        <div class="video-content">
+          <div class="video-description">
+            <p>
+              Un día estás navegando y te aparece un pop-up que dice: "Su equipo
+              está infectado. Llame al 01-800...". Entras en pánico y llamas. Al
+              otro lado del teléfono, una voz amable dice ser de Microsoft, pero
+              en realidad es un estafador que busca instalar malware o cobrarte
+              por servicios falsos. Este tipo de Scam de Soporte Técnico se ha
+              vuelto muy común. Se aprovechan del miedo y la desinformación para
+              hacerte dar acceso remoto a tu equipo o sacar dinero.
+            </p>
+          </div>
 
-                        Este tipo de Scam de Soporte Técnico se ha vuelto muy común. Se aprovechan del miedo y la
-                        desinformación para hacerte dar acceso remoto a tu equipo o sacar dinero.
-                    </p>
-                </div>
-
-                <div class="video-wrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sI2TE_hYFYQ?si=RrKwjZ6x07HxyG2g"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-                </div>
-            </div>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/sI2TE_hYFYQ?si=RrKwjZ6x07HxyG2g"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
+      </div>
     </section>
-
 
     <!-- SECCIÓN NÚMERO 2 -->
     <section class="secure-info-section">
-        <div class="secure-image">
-            <img src="resources/assets/vid-8.png" alt="Protección en línea">
-        </div>
-        <div class="secure-content">
-            <h2>¿Alguna vez pensaste que ese número de soporte técnico podía ser parte de una estafa?</h2>
+      <div class="secure-image">
+        <img src="resources/assets/vid-8.png" alt="Protección en línea" />
+      </div>
+      <div class="secure-content">
+        <h2>¿Cómo funciona el scam de soporte técnico?</h2>
 
-            <p>Pues es una de las trampas más viejas y efectivas del cibercrimen.Aquí te damos tres claves para
-                protegerte</p>
+        <p>
+          Te aparece un aviso falso diciendo que tu PC tiene virus y que llames
+          a un número. Cuando llamas, un “técnico” intenta asustarte para que
+          pagues o le des acceso a tu equipo. No es ayuda real, es una estafa
+          muy común.
+        </p>
 
-            <a href="#card" class="secure-btn">Más Consejos <i class="fas fa-arrow-right"></i></a>
-        </div>
+        <a href="#card" class="secure-btn"
+          >Recomendaciones <i class="fas fa-arrow-down"></i
+        ></a>
+      </div>
     </section>
 
     <!-- SECCION NUMERO 3 -->
-    <div class="section-title">Recomendaciones para evitar la estafa vía "soporte tecnico"</div>
-
-    <div class="cards-container">
-        <div class="card">
-            <h3>Nunca llames a números que aparecen en pop-ups</h3>
-            <p>Las verdaderas empresas tecnológicas no muestran alertas así ni contactan directamente a los usuarios
-
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Cuidado con el Scam de Soporte Técnico Falso</h3>
-            <p>Este tipo de estafa intenta engañarte haciéndose pasar por empresas reconocidas como Microsoft o Apple.
-                Usan ventanas emergentes alarmantes o te llaman fingiendo detectar problemas graves en tu equipo para
-                obtener acceso remoto o dinero.</p>
-        </div>
-
-        <div class="card">
-            <h3>Si caíste, cambia todas tus contraseñas y formatea el equipo</h3>
-            <p>Lo más probable es que hayan instalado software espía. Es mejor comenzar desde cero y proteger tus datos.
-            </p>
-        </div>
+    <div class="section-title" id="card">
+      Recomendaciones para evitar la estafa vía "soporte tecnico"
     </div>
 
+    <div class="cards-container">
+      <div class="card">
+        <h3>Nunca llames a números que aparecen en pop-ups</h3>
+        <p>
+          Las verdaderas empresas tecnológicas no muestran alertas así ni
+          contactan directamente a los usuarios
+        </p>
+      </div>
 
+      <div class="card">
+        <h3>Cuidado con el Scam de Soporte Técnico Falso</h3>
+        <p>
+          Este tipo de estafa intenta engañarte haciéndose pasar por empresas
+          reconocidas como Microsoft o Apple. Usan ventanas emergentes
+          alarmantes o te llaman fingiendo detectar problemas graves en tu
+          equipo para obtener acceso remoto o dinero.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Si caíste, cambia todas tus contraseñas y formatea el equipo</h3>
+        <p>
+          Lo más probable es que hayan instalado software espía. Es mejor
+          comenzar desde cero y proteger tus datos.
+        </p>
+      </div>
+    </div>
 
     <footer>
-        <div class="footer-container">
+      <div class="footer-container">
+        <!-- Logo y descripción -->
+        <div class="footer-logo">
+          <a href="#"
+            ><img
+              src="resources/LOGO_PROYECTO-removebg-preview.png"
+              alt="Colgesan"
+          /></a>
+          <p>Navega con seguridad y sé parte del cambio digital.</p>
+        </div>
 
-            <!-- Logo y descripción -->
-            <div class="footer-logo">
-                <a href="#"><img src="resources/LOGO_PROYECTO-removebg-preview.png" alt="Colgesan"></a>
-                <p>Navega con seguridad y sé parte del cambio digital.</p>
-            </div>
+        <!-- Consejos / Temas -->
+        <div class="footer-videos">
+          <h3>Enlaces a Videos</h3>
+          <div class="footer-videos-columns">
+            <ul>
+              <li><a href="account-hijacking-1.html">Account Hijacking</a></li>
+              <li><a href="phishing-2.html">Phishing</a></li>
+              <li><a href="mitm-3.html">Man-in-the-Middle</a></li>
+              <li><a href="apps-piratas-4.html">Apps Piratas</a></li>
+              <li>
+                <a href="Engagement-Farming-5.html">Engagement Farming</a>
+              </li>
+            </ul>
+            <ul>
+              <li><a href="scam-correo-6.html">Scam (Vía Correo)</a></li>
+              <li><a href="ransomware-usb-7.html">Ransoware (Via USB)</a></li>
+              <li>
+                <a href="tech-support-scam-8.html">Scam (Soporte Técnico)</a>
+              </li>
+              <li><a href="tema9.html">Tema 9</a></li>
+              <li><a href="tema10.html">Tema 10</a></li>
+            </ul>
+          </div>
+        </div>
 
-
-            <!-- Consejos / Temas -->
-            <div class="footer-videos">
-                <h3>Enlaces a Videos</h3>
-                <div class="footer-videos-columns">
-                    <ul>
-                        <li><a href="account-hijacking-1.html">Account Hijacking</a></li>
-                        <li><a href="phishing-2.html">Phishing</a></li>
-                        <li><a href="mitm-3.html">Man-in-the-Middle</a></li>
-                        <li><a href="apps-piratas-4.html">Apps Piratas</a></li>
-                        <li><a href="Engagement-Farming-5.html">Engagement Farming</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="scam-correo-6.html">Scam (Vía Correo)</a></li>
-                        <li><a href="ransomware-usb-7.html">Ransoware (Via USB)</a></li>
-                        <li><a href="tech-support-scam-8.html">Scam (Soporte Técnico)</a></li>
-                        <li><a href="tema9.html">Tema 9</a></li>
-                        <li><a href="tema10.html">Tema 10</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Información de contacto
+        <!-- Información de contacto
             <div class="footer-contact">
                 <h3>Contacto</h3>
                 <ul>
@@ -174,25 +206,28 @@
                 </ul>
             </div> -->
 
-            <div class="footer-social">
-                <h3>Síguenos</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="https://x.com/colnase"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/colnase/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@ColgesanSeguridadDigital"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
+        <div class="footer-social">
+          <h3>Síguenos</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/colnase"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/colnase/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/@ColgesanSeguridadDigital"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
         </div>
-        <!-- Derechos de autor -->
-        <div class="footer-bottom">
-            <p>&copy; 2025 Colgesan. Todos los derechos reservados.</p>
-        </div>
+      </div>
+      <!-- Derechos de autor -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Colgesan. Todos los derechos reservados.</p>
+      </div>
     </footer>
 
-
     <script src="script.js" defer></script>
-
-</body>
-
+  </body>
 </html>

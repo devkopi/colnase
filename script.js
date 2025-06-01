@@ -16,32 +16,39 @@ document.addEventListener("DOMContentLoaded", function () {
     menuToggle.classList.toggle("active");
   });
 
-  // Cerrar menú al hacer clic en un enlace
   navItems.forEach((item) => {
-    item.addEventListener("click", function () {
+    item.addEventListener("click", function (e) {
+      // Si el enlace clicado es el de "Consejos", no cierres el menú
+      if (item.id === "consejos-link") {
+        e.preventDefault(); // evita navegación
+        return; // no cerrar menú
+      }
+
+      // Cerrar el menú normalmente
       navLinks.classList.remove("show");
       document.body.classList.remove("no-scroll");
       menuToggle.classList.remove("active");
     });
-
-    const consejosLink = document.getElementById("consejos-link");
-    const consejosDropdown = consejosLink.parentElement;
-
-    if (consejosLink && consejosDropdown) {
-      consejosLink.addEventListener("click", function (e) {
-        e.preventDefault();
-        consejosDropdown.classList.toggle("show");
-      });
-
-      // Cerrar si se hace clic fuera
-      window.addEventListener("click", function (e) {
-        if (!consejosDropdown.contains(e.target) && e.target !== consejosLink) {
-          consejosDropdown.classList.remove("show");
-        }
-      });
-    }
   });
 
+  // Dropdown de "Consejos"
+  const consejosLink = document.getElementById("consejos-link");
+  const consejosDropdown = consejosLink?.parentElement;
+
+  if (consejosLink && consejosDropdown) {
+    consejosLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation(); //  IMPORTANTE para móviles: evita que el evento burbujee
+      consejosDropdown.classList.toggle("show");
+    });
+
+    // Cerrar si se hace clic fuera
+    window.addEventListener("click", function (e) {
+      if (!consejosDropdown.contains(e.target)) {
+        consejosDropdown.classList.remove("show");
+      }
+    });
+  }
 
   // Carrusel
   const slides = document.querySelectorAll(".carousel-item");

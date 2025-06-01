@@ -1191,3 +1191,501 @@ footer::before {
     font-size: 1.2rem;
   }
 }
+
+/* SECCION 1 */
+.cyberlaw-section {
+  background: linear-gradient(135deg, #ffffff, #e8f0ff, #d4e4f7, #f6f0ff);
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.cyberlaw-section .container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.cyberlaw-section .title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1d3557;
+  margin-top: 20px;
+}
+
+.cyberlaw-section .intro {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.law-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.law-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.law-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.law-card h3 {
+  font-size: 1.4rem;
+  color: #0c2d57;
+  margin-bottom: 15px;
+}
+
+.law-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.law-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #2a4469;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.law-card a:hover {
+  background-color: #16324f;
+}
+
+/* DISEÑO RESPONSIVE SECCIÓN 1 */
+@media (max-width: 992px) {
+  .cyberlaw-section .title {
+    font-size: 2.2rem;
+  }
+
+  .cyberlaw-section .intro {
+    font-size: 1.05rem;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .law-boxes {
+    gap: 25px;
+  }
+
+  .law-card {
+    width: 280px;
+    padding: 25px;
+  }
+
+  .law-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .law-card p {
+    font-size: 0.93rem;
+  }
+
+  .law-card a {
+    padding: 7px 13px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cyberlaw-section {
+    padding: 50px 15px;
+  }
+
+  .cyberlaw-section .title {
+    font-size: 2rem;
+  }
+
+  .law-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .law-card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cyberlaw-section .title {
+    font-size: 1.8rem;
+  }
+
+  .cyberlaw-section .intro {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+
+  .law-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .law-card p {
+    font-size: 0.9rem;
+  }
+
+  .law-card a {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+/* SECCIÓN #2 */
+.threats-section {
+  background: linear-gradient(135deg, #f6f9fc, #d4e4f7);
+  padding: 80px 20px;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+}
+
+.threats-section .container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.threats-section .title {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #0a2d4d;
+  font-weight: bold;
+}
+
+.threats-section .intro {
+  font-size: 1.15rem;
+  margin-bottom: 60px;
+  color: #2b2b2b;
+  line-height: 1.7;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  padding-left: 35px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #2a4469, #0a2d4d);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.timeline-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.timeline-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.timeline-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.timeline-item .icon {
+  font-size: 2rem;
+  background-color: #2a4469;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.timeline-item .content {
+  flex: 1;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.timeline-item .content:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-item h3 {
+  font-size: 1.35rem;
+  color: #0c2d57;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.timeline-item p {
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* DISEÑO RESPONSIVE DE LA SECCIÓN 2 */
+@media (max-width: 768px) {
+  .threats-section {
+    padding: 60px 15px;
+  }
+
+  .threats-section .title {
+    font-size: 2.2rem;
+  }
+
+  .threats-section .intro {
+    font-size: 1.05rem;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .timeline {
+    padding-left: 20px;
+    gap: 40px;
+  }
+
+  .timeline::before {
+    left: 25px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .timeline-item .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+  }
+
+  .timeline-item .content {
+    width: 100%;
+    padding: 18px 20px;
+  }
+
+  .timeline-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-item p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .threats-section {
+    padding: 50px 10px;
+  }
+
+  .threats-section .title {
+    font-size: 1.9rem;
+  }
+
+  .threats-section .intro {
+    font-size: 1rem;
+  }
+
+  .timeline {
+    gap: 30px;
+    padding-left: 15px;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item .icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.4rem;
+  }
+
+  .timeline-item .content {
+    padding: 15px 18px;
+  }
+
+  .timeline-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-item p {
+    font-size: 0.9rem;
+  }
+}
+
+
+.article-section {
+  background: linear-gradient(135deg, #ffffff, #e8f0ff, #d4e4f7, #f6f0ff);
+  padding: 80px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.article-section .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.article-section .title {
+  font-size: 2.5rem;
+  color: #0c2d57;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.article-section .intro {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #333;
+  margin: 0 auto 50px auto;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.article-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+  background: #ffffffdd;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.article-block.alt {
+  background: #f0f4fb;
+}
+
+.article-block .icon {
+  font-size: 2rem;
+  color: #2a4469;
+  flex-shrink: 0;
+}
+
+.article-block .content h3 {
+  font-size: 1.4rem;
+  color: #0c2d57;
+  margin-bottom: 10px;
+}
+
+.article-block .content p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .article-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .article-block .icon {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+  }
+
+  .article-block .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .article-block .content p {
+    font-size: 0.95rem;
+  }
+
+  .article-section .title {
+    font-size: 2rem;
+  }
+
+  .article-section .intro {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-section {
+    padding: 60px 15px;
+  }
+
+  .article-block {
+    padding: 18px;
+  }
+
+  .article-block .icon {
+    font-size: 1.6rem;
+  }
+
+  .article-block .content h3 {
+    font-size: 1.1rem;
+  }
+
+  .article-block .content p {
+    font-size: 0.9rem;
+  }
+}
