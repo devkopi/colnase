@@ -568,14 +568,18 @@ header {
 }
 
 .secure-image {
-  max-width: 50%;
-  margin-right: 60px;
+  max-width: 40%;
+  margin-right: 50px;
 }
 
 .secure-image img {
   width: 100%;
-  max-width: 600px;
+  max-width: 350px;
   height: auto;
+  margin-left: 100px;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .secure-content {
