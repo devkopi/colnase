@@ -349,14 +349,10 @@ header {
   margin-bottom: 15px;
   font-weight: bold;
   letter-spacing: 2px;
-
-  /* Aplicamos el gradiente negro-morado-azul */
   background: linear-gradient(90deg, #000000, #6a0dad, #0000ff);
   -webkit-background-clip: text;
-  /* Para navegadores WebKit (Chrome, Safari) */
   background-clip: text;
   color: transparent;
-  /* Hace visible el gradiente */
 
   /* Opcional: Efecto de sombra para mejor legibilidad */
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -588,14 +584,17 @@ header {
 }
 
 .secure-content h2 {
-  font-size: 38px;
+  font-size: 50px;
   margin-bottom: 20px;
+  margin-top: 39px;
+  text-align: center;
 }
 
 .secure-content p {
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 20px;
+  display: flex; 
 }
 
 .secure-btn {
