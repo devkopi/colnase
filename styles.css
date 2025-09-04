@@ -22,7 +22,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
+  height: 80px;
+  padding: 0px 50px;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   position: fixed;
@@ -32,35 +33,35 @@ header {
 }
 
 /* LOGO */
-.logo a {
-  color: #160054;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-}
-
-.logo a:hover {
-  color: #2a0080;
-  text-shadow: 0 0 5px #2a0080, 0 0 10px #2a0080, 0 0 20px #2a0080;
-}
-
-@keyframes fadeInLogo {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .logo {
-  animation: fadeInLogo 0.8s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-item:first-child img {
+  height: 50px; /* Tamaño logo 1*/
+}
+
+.logo-item:last-child img {
+  height: 80px; /* Tamaño logo 2*/
+}
+
+.separator {
+  width: 2px;
+  height: 50px;  /* Ajuste según la altura */
+  background-color: #160054; /* Color de la linea*/
+}
+
+
+
+/* NAVBAR */
 
 /* LINKS DE LA NAVBAR */
 .nav-links {
@@ -568,9 +569,9 @@ header {
   margin-right: 50px;
 }
 
+
 .secure-image img {
   width: 100%;
-  max-width: 350px;
   height: auto;
   margin-left: 100px;
   align-items: center;
@@ -580,11 +581,11 @@ header {
 
 .secure-content {
   max-width: 40%;
-  text-align: right;
 }
 
+
 .secure-content h2 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 20px;
   margin-top: 39px;
   text-align: center;
@@ -595,6 +596,7 @@ header {
   line-height: 1.8;
   margin-bottom: 20px;
   display: flex; 
+  text-align: justify;
 }
 
 .secure-btn {
@@ -609,10 +611,14 @@ header {
   border: none;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .secure-btn i {
   transition: transform 0.3s ease;
+  margin-left: 5px;
 }
 
 .secure-btn:hover {
@@ -804,7 +810,7 @@ header {
 /* Descripción a la izquierda */
 .video-description {
   max-width: 550px;
-  text-align: left;
+  text-align: justify;
   font-size: 18px;
   line-height: 1.7;
   color: #160054;
@@ -1692,3 +1698,4 @@ footer::before {
     font-size: 0.9rem;
   }
 }
+
