@@ -46,17 +46,21 @@ header {
 }
 
 .logo-item:first-child img {
-  height: 50px; /* Tamaño logo 1*/
+  height: 50px;
+  /* Tamaño logo 1*/
 }
 
 .logo-item:last-child img {
-  height: 80px; /* Tamaño logo 2*/
+  height: 80px;
+  /* Tamaño logo 2*/
 }
 
 .separator {
   width: 2px;
-  height: 50px;  /* Ajuste según la altura */
-  background-color: #160054; /* Color de la linea*/
+  height: 50px;
+  /* Ajuste según la altura */
+  background-color: #160054;
+  /* Color de la linea*/
 }
 
 
@@ -100,7 +104,7 @@ header {
 }
 
 /* Dropdown - Flecha ▼ */
-.nav-links li.dropdown > a::after {
+.nav-links li.dropdown>a::after {
   content: "▼";
   font-size: 0.6rem;
   margin-left: 6px;
@@ -169,7 +173,7 @@ header {
   display: flex;
 }
 
-.nav-links li.dropdown.show > a::after {
+.nav-links li.dropdown.show>a::after {
   transform: rotate(180deg);
 }
 
@@ -191,6 +195,7 @@ header {
   overflow: hidden;
   height: 100vh;
 }
+
 /* Estilos móviles */
 @media (max-width: 768px) {
   header {
@@ -257,7 +262,8 @@ header {
   }
 
   .nav-links li a:hover {
-    color: #6b00b3; /* Hover morado */
+    color: #6b00b3;
+    /* Hover morado */
     background: none;
   }
 
@@ -595,7 +601,7 @@ header {
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 20px;
-  display: flex; 
+  display: flex;
   text-align: justify;
 }
 
@@ -1176,6 +1182,7 @@ footer::before {
 
 /* Ajustes adicionales para pantallas ultra pequeñas */
 @media (max-width: 480px) {
+
   .btn,
   .btn-secundario,
   .secure-btn {
@@ -1429,9 +1436,11 @@ footer::before {
 .timeline-item:nth-child(1) {
   animation-delay: 0.2s;
 }
+
 .timeline-item:nth-child(2) {
   animation-delay: 0.4s;
 }
+
 .timeline-item:nth-child(3) {
   animation-delay: 0.6s;
 }
@@ -1487,6 +1496,7 @@ footer::before {
     transform: translateY(20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -1699,3 +1709,356 @@ footer::before {
   }
 }
 
+/* ----- ESTILOS DE LAS ENTREVISTAS ----- */
+
+
+/* ----- SECCIÓN PRINCIPAL ----- */
+.classes-section {
+  max-width: 1200px;
+  margin: 110px auto 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  margin-top: 110px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: #160054;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #666;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* ----- LAYOUT PRINCIPAL ----- */
+.content-layout {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ----- CARD DE CLASE ----- */
+.class-card {
+  flex: 0 0 400px;
+  /* Removed colorful background, now transparent with subtle border */
+  background: transparent;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+  width: 100%;
+  /* Adjusted height to better accommodate 433x577 image ratio */
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  /* Removed gradient background */
+  background: transparent;
+  cursor: pointer;
+}
+
+.card-image img {
+  /* Adjusted sizing to show image more zoomed out for 433x577 dimensions */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.class-card:hover .card-image img {
+  transform: scale(1.02);
+}
+
+.card-content {
+  padding: 25px;
+  /* Added white background only to content area */
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+}
+
+/* Added decorative bar styling */
+.decorative-bar {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.card-description {
+  color: black;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+
+/* Removed card button styles as button was removed */
+
+/* ----- CONTENIDO DESCRIPTIVO ----- */
+.description-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.description-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #160054;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  /* Centered the title */
+  text-align: center;
+}
+
+.description-text {
+  color: black;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  /* Justified the paragraph text */
+  text-align: justify;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  /* Centered the single button */
+  justify-content: center;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.social-btn.instagram {
+  /* Made Instagram button less colorful, more neutral */
+  background: black;
+  color: white;
+  border: 2px solid #333;
+}
+
+.social-btn.instagram:hover {
+  background: transparent;
+  color: black;
+}
+
+
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+  .content-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .class-card {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .description-title {
+    font-size: 1.6rem;
+  }
+
+  .social-buttons {
+    justify-content: center;
+  }
+}
+
+/* ROLES CSS */
+.role-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.role-badge {
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid;
+}
+
+.role-badge.estudiante {
+  background: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+  border-color: #16a34a;
+}
+
+.role-badge.docente {
+  background: rgba(59, 130, 246, 0.1);
+  color: #2563eb;
+  border-color: #2563eb;
+}
+
+.role-badge.rector {
+  background: rgba(168, 85, 247, 0.1);
+  color: #7c3aed;
+  border-color: #7c3aed;
+}
+
+.role-badge.coordinador {
+  background: rgba(245, 158, 11, 0.1);
+  color: #d97706;
+  border-color: #d97706;
+}
+
+.role-badge.padre {
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+/* Contenedor */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Estilo base */
+.tag {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  background: #555;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.25s ease;
+  cursor: default;
+  letter-spacing: 0.3px;
+}
+
+.tag:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  opacity: 0.95;
+}
+
+/* Colores por tag */
+.tag-coordinador { background: linear-gradient(135deg,#6366f1,#4338ca); }
+.tag-entrevistas { background: linear-gradient(135deg,#10b981,#047857); }
+.tag-web         { background: linear-gradient(135deg,#2563eb,#1e40af); }
+.tag-multimedia  { background: linear-gradient(135deg,#db2777,#be185d); }
+.tag-animacion   { background: linear-gradient(135deg,#f59e0b,#b45309); }
+.tag-ilustracion { background: linear-gradient(135deg,#8b5cf6,#6d28d9); }
+.tag-video       { background: linear-gradient(135deg,#ef4444,#b91c1c); }
+.tag-redes       { background: linear-gradient(135deg,#06b6d4,#0891b2); }
+
+
+
+/* SECCIÓN DE VIDEOS PARA ENTREVISTAS */
+.interview-video {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff, #e8f0ff, #d4e4f7, #f6f0ff);
+  color: #fff;
+}
+
+.interview-video-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.interview-video-title {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  background: #160054;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.interview-video-quote {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 40px;
+  color: gray;
+}
+
+/* Marco del video */
+.interview-video-frame {
+  position: relative;
+  max-width: 850px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.interview-video-frame:hover {
+  transform: scale(1.02);
+}
+
+.interview-video-frame iframe {
+  width: 100%;
+  height: 480px;
+  border: none;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .interview-video-title {
+    font-size: 2rem;
+  }
+
+  .interview-video-frame iframe {
+    height: 250px;
+  }
+}

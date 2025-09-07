@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="icon" href="/resources/robot-hero.png" type="image/x-icon">
     <title>Entrevista 1</title>
 </head>
@@ -85,13 +87,92 @@
                 </li>
 
                 <li><a href="/assets/videos/fundamentacion.html">FUNDAMENTACION</a></li>
-                <li><a href="/assets/videos/nosotros.html">NUESTRO EQUIPO</a></li>  
+                <li><a href="/assets/videos/nosotros.html">NUESTRO EQUIPO</a></li>
             </ul>
         </nav>
     </header>
 
+    <body>
+        <!-- SECCIÓN #1 NUEVA -->
+        <section class="interview-video">
+            <div class="interview-video-container">
+                <h2 class="interview-video-title">Entrevista exclusiva</h2>
 
-    <script src="/script.js"></script>
+                <p class="interview-video-quote">
+                    "No hay hackers buenos o malos; solo intenciones."
+                    <br>Tsutomu Shimomura
+                </p>
+
+                <div class="interview-video-frame">
+                    <iframe src="https://www.youtube.com/embed/IrSY2McnebU" title="Entrevista sobre ciberseguridad"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN #2 -->
+        <section class="classes-section">
+            <!-- Título de la sección -->
+            <div class="section-title">
+                <h2>Conoce más a los invitados</h2>
+                <p>Encontrará una breve información acerca de la persona entrevistada</p>
+            </div>
+
+            <!-- Layout principal -->
+            <div class="content-layout">
+                <!-- IMAGEN DE LA CARD -->
+                <div class="class-card">
+                    <div class="card-image">
+                        <img src="/resources//assets/becerra2-removebg-preview.png" alt="Clase de Programación">
+                    </div>
+                    <div class="card-content">
+                        <!-- roles -->
+                        <div class="role-badges">
+                            <span class="role-badge estudiante">Estudiante</span>
+                            <!-- <span class="role-badge docente">Docente</span>
+                            <span class="role-badge rector">Rector</span>
+                            <span class="role-badge coordinador">Coordinador</span>
+                            <span class="role-badge padre">Padre de Familia</span> -->
+                        </div>
+                        <!-- TITULO DE LA CARD -->
+                        <h3 class="card-title">Carlos Jesus Becerra Paez</h3>
+                        <!-- BARD DECORATIVA DE LA CARD -->
+                        <div class="decorative-bar"></div>
+                        <p class="card-description">
+                            Estudiante de la Institución Educativa General Santander
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contenido descriptivo (derecha) -->
+                <div class="description-content">
+                    <!-- TITULO DE LA DESCRIPCION -->
+                    <h3 class="description-title">Carlos Jesus Becerra Paez</h3>
+                    <!-- TEXTO DE LA DESCRIPCION -->
+                    <p class="description-text">
+                        Ofrecemos una experiencia educativa innovadora donde la teoría se combina con la práctica.
+                        Nuestros instructores expertos te acompañarán en tu journey de crecimiento profesional,
+                        brindándote las herramientas necesarias para destacar en el mundo digital.
+                    </p>
+
+                    <!-- BOTON DE INSTAGRAM -->
+                    <div class="social-buttons">
+                        <a href="#" class="social-btn instagram">
+                            <i class="fab fa-instagram"></i><span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </body>
+
+
 
     <footer>
         <div class="footer-container">
@@ -108,16 +189,16 @@
                 <h3>Enlaces a Videos</h3>
                 <div class="footer-videos-columns">
                     <ul>
-                        <li><a href="/account-hijacking-1.html">Account Hijacking</a></li>
-                        <li><a href="/phishing-2.html">Phishing</a></li>
-                        <li><a href="/mitm-3.html">Man-in-the-Middle</a></li>
-                        <li><a href="/apps-piratas-4.html">Apps Piratas</a></li>
+                        <li><a href="/assets/videos/account-hijacking-1.html">Account Hijacking</a></li>
+                        <li><a href="/assets/videos/phishing-2.html">Phishing</a></li>
+                        <li><a href="/assets/videos/mitm-3.html">Man-in-the-Middle</a></li>
+                        <li><a href="/assets/videos/apps-piratas-4.html">Apps Piratas</a></li>
                     </ul>
                     <ul>
-                        <li><a href="/Engagement-Farming-5.html">Engagement Farming</a></li>
-                        <li><a href="/scam-correo-6.html">Scam (Vía Correo)</a></li>
-                        <li><a href="/ransomware-usb-7.html">Ransoware (Via USB)</a></li>
-                        <li><a href="/tech-support-scam-8.html">Scam (Soporte Técnico)</a></li>
+                        <li><a href="/assets/videos/Engagement-Farming-5.html">Engagement Farming</a></li>
+                        <li><a href="/assets/videos/scam-correo-6.html">Scam (Vía Correo)</a></li>
+                        <li><a href="/assets/videos/ransomware-usb-7.html">Ransoware (Via USB)</a></li>
+                        <li><a href="/assets/videos/tech-support-scam-8.html">Scam (Soporte Técnico)</a></li>
                     </ul>
                 </div>
             </div>
@@ -169,6 +250,7 @@
             <p>&copy; 2025 Colnase. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="/script.js"></script>
 </body>
 
 </html>
