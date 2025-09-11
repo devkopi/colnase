@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navItems.forEach((item) => {
     item.addEventListener("click", function (e) {
-      const isDropdownParent = item.parentElement.closest("dropdown");
+      const isDropdownParent = item.parentElement.closest(".dropdown");
       
       // Si es el enlace padre del dropdown → no cierres
       if (isDropdownParent) {
