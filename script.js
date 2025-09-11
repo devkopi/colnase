@@ -18,10 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navItems.forEach((item) => {
     item.addEventListener("click", function (e) {
-      // Si el enlace clicado es el de "Consejos", no cierres el menú
+      // Si el enlace abre un dropdown, no cierres el menú
+      if (item.closest(".dropdown")) {
+        e.preventDefault();
+        return;
+      }
+
+      // Si es el de "Consejos", tampoco cierres
       if (item.id === "consejos-link") {
-        e.preventDefault(); // evita navegación
-        return; // no cerrar menú
+        e.preventDefault();
+        return;
       }
 
       // Cerrar el menú normalmente
