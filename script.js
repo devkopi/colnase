@@ -18,9 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   navItems.forEach((item) => {
     item.addEventListener("click", function (e) {
-      // Si el enlace abre un dropdown, no cierres el menú
-      if (item.closest(".dropdown")) {
-        e.preventDefault();
+      const isDropdownParent = item.parentElement.closest("dropdown");
+      
+      // Si es el enlace padre del dropdown → no cierres
+      if (isDropdownParent) {
         return;
       }
 
@@ -30,20 +31,23 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      // Cerrar el menú normalmente
-      navLinks.classList.remove("show");
-      document.body.classList.remove("no-scroll");
-      menuToggle.classList.remove("active");
+      // Solo cerrar si estamos en móvil
+      if (window.innerWidth <= 768) {
+        navLinks.classList.remove("show");
+        document.body.classList.remove("no-scroll");
+        menuToggle.classList.remove("active");
+      }
     });
   });
 
   // Dropdowns genéricos
-  const dropdownLinks = document.querySelectorAll(".dropdown > a");
+  const dropdownParents = document.querySelectorAll(".dropdown > a");
 
-  dropdownLinks.forEach(link => {
+  dropdownParents.forEach(link => {
     const dropdown = link.parentElement;
 
     link.addEventListener("click", function (e) {
+      // Evita la navegación SOLO en el padre
       e.preventDefault();
       e.stopPropagation();
 
